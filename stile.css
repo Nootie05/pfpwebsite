@@ -1,53 +1,62 @@
-/* Algemene stijl */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5, #84fab0, #8fd3f4);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
   text-align: center;
+  min-height: 100vh;
 }
 
-/* Header stijl */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 header {
-  background-color: #ff6600;
-  color: white;
-  padding: 50px;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 60px 20px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 h1 {
-  font-size: 48px;
-  margin: 0;
+  font-size: 3rem;
+  margin: 0 0 10px;
 }
 
 p {
-  font-size: 20px;
-  margin: 10px 0;
+  font-size: 1.25rem;
+  margin: 5px 0;
 }
 
-/* Discord-knop stijl */
 .discord-button {
-  background-color: #7289da;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
   color: white;
   font-size: 18px;
-  padding: 15px 30px;
+  padding: 14px 28px;
   border: none;
+  border-radius: 30px;
   cursor: pointer;
   margin-top: 20px;
-  transition: background-color 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+  transition: all 0.3s ease;
 }
 
 .discord-button:hover {
-  background-color: #5b6eae;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
 }
 
-/* Footer stijl */
 footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 15px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  font-size: 14px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
