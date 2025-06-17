@@ -1,0 +1,53 @@
+/* Algemene stijl */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+/* Header stijl */
+header {
+  background-color: #ff6600;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Discord-knop stijl */
+.discord-button {
+  background-color: #7289da;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.discord-button:hover {
+  background-color: #5b6eae;
+}
+
+/* Footer stijl */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
