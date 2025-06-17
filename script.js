@@ -1,8 +1,16 @@
 function copyDiscord() {
-  const discordName = 'nootieboy0512';
-  navigator.clipboard.writeText(discordName).then(() => {
-    alert(`Username "${discordName}" copied! Add me on Discord.`);
-  }, () => {
-    alert('Could not copy username. Please copy manually: ' + discordName);
-  });
+  // Maak een tijdelijk input element aan
+  var tempInput = document.createElement("input");
+  tempInput.value = "nootieboy0512"; // Discord gebruikersnaam
+  document.body.appendChild(tempInput);
+
+  // Selecteer de tekst en kopieer het naar het klembord
+  tempInput.select();
+  document.execCommand("copy");
+
+  // Verwijder het tijdelijke input element
+  document.body.removeChild(tempInput);
+
+  // Toon een bevestiging (kan ook via een alert of andere manier)
+  alert("Discord username copied: nootieboy0512");
 }
